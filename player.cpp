@@ -62,11 +62,11 @@ void Player::setHealth(unsigned int h)
 void Player::newTurn() 
 {
         hunger--;
-            if (hunger < 0)
+            if (hunger > 10)
             
                 hunger = 0;
         thirst--;
-            if (thirst < 0) 
+            if (thirst > 5) 
             
                 thirst = 0;
             
