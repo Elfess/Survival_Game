@@ -114,6 +114,12 @@ int main()
             cout << "Invalid input found: " << playerChoice << endl;
             break;
         }
+        
+        while (player.getHealth() == 0)
+        {
+            cout << "Your journey has reached an unfortunate end... how sad.";
+            break;
+        }
 
     }
     
